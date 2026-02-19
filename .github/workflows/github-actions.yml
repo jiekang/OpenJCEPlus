@@ -92,10 +92,9 @@ jobs:
           --batch-mode
           '-Dock.library.path=${{ github.workspace }}/OCK/'
           -Dtest='
-          ibm.jceplus.junit.openjceplus.TestAll,
-          ibm.jceplus.junit.TestMemStressAll,
-          ibm.jceplus.junit.TestMultithread,
-          ibm.jceplus.junit.openjceplus.integration.TestAll
+          ibm.jceplus.junit.openjceplusfips.TestAll,
+          ibm.jceplus.junit.TestMultithreadFIPS,
+          ibm.jceplus.junit.openjceplusfips.integration.TestAll
           '
           install
         env:
