@@ -55,7 +55,7 @@ jobs:
       - name: Compile Open Cryptography Kit C
         run: |
           cd ${{ github.workspace }}/OpenCryptographyKitC/icc
-          make -k OPSYS=AMD64_LINUX CONFIG=release create_all
+          make -k OPSYS=AMD64_LINUX CONFIG=release create_all_FIPS
           export LD_LIBRARY_PATH=${{ github.workspace }}/OpenCryptographyKitC/openssl-1.1.1/
           make -k OPSYS=AMD64_LINUX CONFIG=release all
           make -k OPSYS=AMD64_LINUX CONFIG=release iccpkg
